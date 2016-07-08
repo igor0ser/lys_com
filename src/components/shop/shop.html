@@ -1,0 +1,28 @@
+﻿<div class="shop">
+	<h3 class="shop-header">
+		Our products:
+	</h3>
+	<ul class="shop-list">
+		<li ng-repeat="product in $ctrl.products">
+			<div class="product clearfix">
+				<figure class="product-figure">
+					<img ng-src="{{ product.img }}" alt="" class="product-img">
+				</figure>
+				<div class="product-data">
+					<a href="#" class="product-header clearfix">
+						<h3 class="product-name">{{ product.name }}</h3>
+						<h3 class="product-price">{{ product.price | currency }}</h3>
+					</a>
+					<p class="product-description">{{ product.description }}</p>
+					<div class="product-buy">
+						<select>
+							<option ng-repeat="n in [] | range:10" value="1">
+								do something
+							</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
