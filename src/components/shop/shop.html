@@ -15,11 +15,15 @@
 					</a>
 					<p class="product-description">{{ product.description }}</p>
 					<div class="product-buy">
-						<select>
-							<option ng-repeat="n in [] | range:10" value="1">
-								do something
+						<select class="product-buy-quantity">
+							<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
+								{{ $index+1 }}
 							</option>
 						</select>
+						<button class="product-buy-btn">
+							Buy
+						</button>
+
 					</div>
 				</div>
 			</div>

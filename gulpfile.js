@@ -42,7 +42,7 @@ const PATH = {
 			],
 		SCRIPTS: [
 			'src/main_js/app.js',
-			'src/main_js/!(app.js)*.js',
+			'src/main_js/**/!(app.js)*.js',
 			'src/components/**/*.js'
 			],
 		SPRITES: 'src/sprites/*.png',

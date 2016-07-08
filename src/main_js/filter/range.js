@@ -1,10 +1,9 @@
 ﻿console.log(3);
 app.filter('range', function(){
-	return function(input, min, max) {
-		min = parseInt(min); //Make string input int
-		max = parseInt(max);
-		for (var i=min; i<max; i++)
+	return function(input, total) {
+		total = parseInt(total);
+		for (var i=0; i<total; i++)
 			input.push(i);
 		return input;
-		};
+	};
 });
