@@ -1,8 +1,9 @@
 ﻿app.component('shop', {
 	templateUrl: '../../components/shop/shop.html',
-	controller: shopController
+	controller: 'shopController'
 });
 
-function shopController(model){
-	this.products = model.products;
-}
+app.controller('shopController', function (model){
+	var $ctrl = this;
+	$ctrl.products = model.products;
+});

@@ -1,5 +1,5 @@
-﻿<div class="product clearfix">
-	<a ui-sref="detail( { productId: $ctrl.productObj.id } )" class="product-link clearfix">
+﻿<div class="detail clearfix">
+	<div class="clearfix">
 		<figure class="product-figure">
 			<img ng-src="{{ $ctrl.productObj.img }}" alt="" class="product-img">
 		</figure>
@@ -9,16 +9,16 @@
 				<h3 class="product-price">{{ $ctrl.productObj.price | currency }}</h3>
 			</div>
 			<p class="product-description">{{ $ctrl.productObj.description }}</p>
+			<div class="product-buy clearfix">
+				<select class="product-buy-select clearfix">
+					<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
+						{{ $index+1 }}
+					</option>
+				</select>
+				<button class="product-buy-btn">
+					Buy
+				</button>
+			</div>
 		</div>
-	</a>
-	<div class="product-buy clearfix">
-		<select class="product-buy-select clearfix">
-			<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
-				{{ $index+1 }}
-			</option>
-		</select>
-		<button class="product-buy-btn">
-			Buy
-		</button>
 	</div>
 </div>
