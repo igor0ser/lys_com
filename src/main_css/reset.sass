@@ -8,9 +8,12 @@ ul
 	padding: 0
 li
 	display: inline-block
+	vertical-align: top
 a
-	color: $text-main-color
+	color: $txt1
 	text-decoration: none
+	&:hover
+		opacity: .7
 h1,
 h2,
 h3,
@@ -23,9 +26,17 @@ figure
 	margin: 0
 button
 	border: none
-	background: $background-header
-	color: $text-header-color
-	outline: none
+	background: $bg2
+	color: $txt2
 	cursor: pointer
-	&:active
-		background: #666
+	border: 2px solid transparent
+	&:active, &:focus, &:hover
+		outline: 2px solid $txt2
+img
+	display: block
+	width: 100%
+	height: auto
+select, input
+	border: 0
+	&:active, &:hover, &:focus
+		outline: 2px solid $txt2

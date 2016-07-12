@@ -1,32 +1,64 @@
 ﻿.shop
 	&-header
 		margin-bottom: 20px
+		font-weight: bold
 	&-list
 		li
-			display: block
+			margin-right: 10px
+			&:nth-child(3n)
+				margin-right: 0
+
+
 
 .product
-	border: 1px solid grey
-	width: 840px;
-	margin: 0 auto 20px
+	border: 1px solid $txt1
+	width: 300px
+	padding: 10px
+	margin-bottom: 10px
+
 	&-figure
 		width: 40%
 		float: left
 		height: auto
-	&-img
-		width: 100%
-		height: auto
 	&-data
 		width: 58%
 		float: right
-	&-header
-		margin-bottom: 10px
+	&-link
 		display: block
 	&-name
 		float: left
 	&-price
 		float: right
 	&-description
-		margin-bottom: 20px
+		margin: 3px 0 10px
+		height: 140px
+		font-size: 0.9em
+		overflow: hidden
+		position: relative
+		text-align: justify
+		&:after
+			position: absolute
+			height: 1em
+			width: 100%
+			display: block
+			content: ''
+			bottom: 0
+			left: 0
+			background: linear-gradient(transparent 0%, $bg1 60%)
 	&-buy
+		&-select
+			background: $bg2
+			color: $txt2
+			width: 40%
+			float: left
+			padding: 10px 6px
+			text-align: center
+			font-weight: bold
+		&-btn
+			width: 58%
+			float: right
+			padding: 9px 0
+			font-weight: bold
+
+
 
