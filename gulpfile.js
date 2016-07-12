@@ -29,11 +29,11 @@ const PATH = {
 	SRC: {
 		HTML: 'src/**/*.html',
 		STYLES: [
-			'src/main_css/sprite.sass', 
-			'src/main_css/variables.sass',
-			'src/main_css/mixins.sass',
-			'src/main_css/main.sass',
-			'src/main_css/reset.sass',
+			'src/css/sprite.sass', 
+			'src/css/variables.sass',
+			'src/css/mixins.sass',
+			'src/css/main.sass',
+			'src/css/reset.sass',
 			'src/components/**/*.sass'
 			],
 		SCRIPTS_LIB: [
@@ -41,15 +41,15 @@ const PATH = {
 			'src/bower_components/angular-ui-router/release/angular-ui-router.min.js'
 			],
 		SCRIPTS: [
-			'src/main_js/app.js',
-			'src/main_js/**/!(app.js)*.js',
+			'src/js/app.js',
+			'src/js/**/!(app.js)*.js',
 			'src/components/**/*.js'
 			],
 		SPRITES: 'src/sprites/*.png',
 		IMAGES: 'src/img/**/*.*',
 		ROOT: 'src/'
 	},
-	SPRITES_STYLE: 'src/main_css/',
+	SPRITES_STYLE: 'src/css/',
 	BUILD: 'build/',
 	IMAGES: 'build/img/',
 	LOCALHOST: 'http://localhost:8000/index.html'
@@ -83,7 +83,7 @@ gulp.task('html', () =>
 
 gulp.task('json', () => 
 		gulp
-			.src('src/**/*.json')
+			.src('src/*.json')
 			.pipe(gulp.dest(PATH.BUILD))
 );
 
