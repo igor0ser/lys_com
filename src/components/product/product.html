@@ -1,13 +1,14 @@
 ﻿<div class="product clearfix">
 	<a ui-sref="detail( { productId: $ctrl.productObj.id } )" class="product-link clearfix">
+	<div class="clearfix">
+		<h3 class="product-name">{{ $ctrl.productObj.name }}</h3>
+		<h3 class="product-price">{{ $ctrl.productObj.price | currency }}</h3>
+	</div>
 		<figure class="product-figure">
 			<img ng-src="{{ $ctrl.productObj.img[0] }}" alt="" class="product-img">
 		</figure>
 		<div class="product-data">
-			<div class="clearfix">
-				<h3 class="product-name">{{ $ctrl.productObj.name }}</h3>
-				<h3 class="product-price">{{ $ctrl.productObj.price | currency }}</h3>
-			</div>
+
 			<p class="product-description">{{ $ctrl.productObj.description }}</p>
 		</div>
 	</a>

@@ -47,6 +47,7 @@ const PATH = {
 			],
 		SPRITES: 'src/sprites/*.png',
 		IMAGES: 'src/img/**/*.*',
+		JSON: 'src/*.json',
 		ROOT: 'src/'
 	},
 	SPRITES_STYLE: 'src/css/',
@@ -83,7 +84,7 @@ gulp.task('html', () =>
 
 gulp.task('json', () => 
 		gulp
-			.src('src/*.json')
+			.src(PATH.SRC.JSON)
 			.pipe(gulp.dest(PATH.BUILD))
 );
 
@@ -151,6 +152,7 @@ gulp.task('watch', () => {
 	watch([PATH.SRC.HTML], () => gulp.start('html') );
 	watch([PATH.SRC.SPRITES], () => gulp.start('sprites') );
 	watch([PATH.SRC.IMAGES], () => gulp.start('images') );
+	watch([PATH.SRC.JSON], () => gulp.start('json') );
 });
 
 gulp.task('clean',  () =>

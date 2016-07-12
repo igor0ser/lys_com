@@ -1,1 +1,53 @@
 ﻿
+.product
+	border: 2px solid $brdr
+	width: 300px
+	padding: 10px
+	margin-bottom: 10px
+	&:hover
+		border-color: $txt2
+
+	&-figure
+		width: 40%
+		float: left
+		height: auto
+	&-data
+		width: 58%
+		float: right
+	&-link
+		display: block
+	&-name
+		float: left
+		margin-bottom: 5px
+	&-price
+		float: right
+	&-description
+		margin: 3px 0 10px
+		height: 140px
+		font-size: 0.9em
+		overflow: hidden
+		position: relative
+		text-align: justify
+		&:after
+			position: absolute
+			height: 1em
+			width: 100%
+			display: block
+			content: ''
+			bottom: 0
+			left: 0
+			background: linear-gradient(transparent 0%, $bg1 60%)
+	&-buy
+		&-select
+			background: $bg2
+			color: $txt2
+			width: 40%
+			float: left
+			padding: 10px 6px
+			text-align: center
+			font-weight: bold
+		&-btn
+			width: 58%
+			float: right
+			padding: 9px 0
+			font-weight: bold

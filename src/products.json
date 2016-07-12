@@ -13,12 +13,36 @@
 	},
 	{
 		"id": 1,
-		"name": "iPad Pro",
+		"name": "iPad Pro 32GB",
 		"price": "780",
 		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
 		"details": {
-			"display": "38mm",
-			"memory": "8gb",
+			"display": "9.7\"",
+			"memory": "32gb",
+			"weight": "50g"
+		},
+		"img": ["img/products/ipad-pro.jpg"]
+	},
+	{
+		"id": 2,
+		"name": "iPad Pro 128GB",
+		"price": "780",
+		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
+		"details": {
+			"display": "9.7\"",
+			"memory": "128gb",
+			"weight": "50g"
+		},
+		"img": ["img/products/ipad-pro.jpg"]
+	},
+	{
+		"id": 3,
+		"name": "iPad Pro 256GB",
+		"price": "780",
+		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
+		"details": {
+			"display": "9.7\"",
+			"memory": "256gb",
 			"weight": "50g"
 		},
 		"img": ["img/products/ipad-pro.jpg"]
