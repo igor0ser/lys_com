@@ -1,14 +1,27 @@
 ﻿<div class="detail clearfix">
 	<div class="clearfix">
 		<figure class="product-figure">
-			<img ng-src="{{ $ctrl.productObj.img }}" alt="" class="product-img">
+			<img ng-src="{{ $ctrl.productObj.img[0] }}" alt="" class="product-img">
 		</figure>
 		<div class="product-data">
 			<div class="clearfix">
 				<h3 class="product-name">{{ $ctrl.productObj.name }}</h3>
 				<h3 class="product-price">{{ $ctrl.productObj.price | currency }}</h3>
 			</div>
-			<p class="product-description">{{ $ctrl.productObj.description }}</p>
+			<div class="product-details">
+				<p>
+					{{ $ctrl.productObj.description }}
+				</p>
+				<p>
+					<b>Display: </b>{{ $ctrl.productObj.details.display }}
+				</p>
+				<p>
+					<b>Memory: </b>{{ $ctrl.productObj.details.memory }}
+				</p>
+				<p>
+					<b>Weight: </b>{{ $ctrl.productObj.details.weight }}
+				</p>
+			</div>
 			<div class="product-buy clearfix">
 				<select class="product-buy-select clearfix">
 					<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
