@@ -1,11 +1,32 @@
 ﻿<div class="shop">
-	<h3 class="shop-header">
-		Our products:
-	</h3>
+	<div class="clearfix">
+		<h3 class="shop-header">
+			Our products:
+		</h3>
+		<button class="shop-show-filter" ng-click="$ctrl.showFilter = !$ctrl.showFilter">
+			Filter
+		</button>
+	</div>
+
+	<div class="shop-filter" ng-if="$ctrl.showFilter">
+		<input class="shop-filter-text" type="text" ng-model="productName" placeholder="Search item...">
+		<label class="shop-filter-label" ng-repeat="category in $ctrl.categories">
+			<input type="checkbox" class="shop-filter-checkbox">
+			<i></i>
+			<span>{{category.name}}</span>
+		</div>
+	</div>
+
 	<ul class="shop-list">
-		<li ng-repeat="product in $ctrl.products | limitTo : $ctrl.limit">
+		<li ng-repeat="
+			product in $ctrl.products
+				| filter: { name: productName }
+				| category: $ctrl.categories 
+				| limitTo : $ctrl.limit
+			">
 			<product product-obj="product"></product>
 		</li>
 	</ul>
+
 	<button class="shop-show-more" ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <= $ctrl.products.length">Show more</button>
 </div>

@@ -1,4 +1,5 @@
 ﻿app.value('model', {
 	data: ['first', 'second', 'third'],
-	products: []
+	products: [],
+	categories: []
 });
