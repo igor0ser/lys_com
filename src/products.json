@@ -1,6 +1,5 @@
 ﻿[
 	{
-		"id": 0,
 		"name": "Apple Watch",
 		"price": "520",
 		"description": "Because it’s on your wrist, Apple Watch lets you receive notifications immediately and conveniently. The moment the people or apps you care about have something to say, you’ll feel a gentle tap. Then you can send just the right response. Just like that.",
@@ -12,7 +11,6 @@
 		"img": ["img/products/apple-watch1.jpg", "img/products/apple-watch2.jpg", "img/products/apple-watch3.jpg", "img/products/apple-watch4.jpg"]
 	},
 	{
-		"id": 1,
 		"name": "iPad Pro 32GB",
 		"price": "800",
 		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
@@ -21,10 +19,9 @@
 			"memory": "32GB",
 			"weight": "437g"
 		},
-		"img": ["img/products/ipad-pro.jpg"]
+		"img": ["img/products/ipad-pro1.jpg", "img/products/ipad-pro2.jpg", "img/products/ipad-pro3.jpg","img/products/ipad-pro4.jpg"]
 	},
 	{
-		"id": 2,
 		"name": "iPad Pro 128GB",
 		"price": "900",
 		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
@@ -33,10 +30,9 @@
 			"memory": "128GB",
 			"weight": "437g"
 		},
-		"img": ["img/products/ipad-pro.jpg"]
+		"img": ["img/products/ipad-pro1.jpg", "img/products/ipad-pro2.jpg", "img/products/ipad-pro3.jpg","img/products/ipad-pro4.jpg"]
 	},
 	{
-		"id": 3,
 		"name": "iPad Pro 256GB",
 		"price": "1000",
 		"description": "iPad Pro is more than the next generation of iPad — it’s an uncompromising vision of personal computing for the modern world. It puts incredible power that leaps past most portable PCs at your fingertips. It makes even complex work as natural as touching, swiping, or writing with a pencil. And whether you choose the 12.9-inch model or the new 9.7-inch model, iPad Pro is more capable, versatile, and portable than anything that’s come before. In a word, super.",
@@ -45,10 +41,9 @@
 			"memory": "256GB",
 			"weight": "437g"
 		},
-		"img": ["img/products/ipad-pro.jpg"]
+		"img": ["img/products/ipad-pro1.jpg", "img/products/ipad-pro2.jpg", "img/products/ipad-pro3.jpg","img/products/ipad-pro4.jpg"]
 	},
 	{
-		"id": 4,
 		"name": "iPad Air 2 16GB",
 		"price": "800",
 		"description": "With iPad, we’ve always had a somewhat paradoxical goal: to create a device that’s immensely powerful, yet so thin and light you almost forget it’s there. A device that helps you do amazing things, without ever getting in your way. iPad Air 2 is all that. And then some.",
@@ -57,10 +52,9 @@
 			"memory": "16GB",
 			"weight": "437g"
 		},
-		"img": ["img/products/ipad-pro.jpg"]
+		"img": ["img/products/ipad-air1.jpg", "img/products/ipad-air2.jpg", "img/products/ipad-air3.jpg","img/products/ipad-air4.jpg"]
 	},
 	{
-		"id": 5,
 		"name": "iPad Air 2 64GB",
 		"price": "880",
 		"description": "With iPad, we’ve always had a somewhat paradoxical goal: to create a device that’s immensely powerful, yet so thin and light you almost forget it’s there. A device that helps you do amazing things, without ever getting in your way. iPad Air 2 is all that. And then some.",
@@ -69,10 +63,9 @@
 			"memory": "437GB",
 			"weight": "50g"
 		},
-		"img": ["img/products/ipad-pro.jpg"]
+		"img": ["img/products/ipad-air1.jpg", "img/products/ipad-air2.jpg", "img/products/ipad-air3.jpg","img/products/ipad-air4.jpg"]
 	},
 	{
-		"id": 6,
 		"name": "iPhone SE 16GB",
 		"price": "1300",
 		"description": "iPhone SE takes an incredibly popular design and refines it even further. Crafted from bead-blasted aluminum for a satin-like finish, this light and compact phone is designed to fit comfortably in your hand. A brilliant 4‑inch1 Retina display makes everything look vibrant and sharp. And matte-chamfered edges and a color-matched stainless steel logo finish the look.",
@@ -81,10 +74,9 @@
 			"memory": "16GB",
 			"weight": "113g"
 		},
-		"img": ["img/products/iphone-se.jpg"]
+		"img": ["img/products/iphone-se1.jpg", "img/products/iphone-se2.jpg", "img/products/iphone-se3.jpg", "img/products/iphone-se4.jpg"]
 	},
 	{
-		"id": 7,
 		"name": "iPhone SE 64GB",
 		"price": "1500",
 		"description": "iPhone SE takes an incredibly popular design and refines it even further. Crafted from bead-blasted aluminum for a satin-like finish, this light and compact phone is designed to fit comfortably in your hand. A brilliant 4‑inch1 Retina display makes everything look vibrant and sharp. And matte-chamfered edges and a color-matched stainless steel logo finish the look.",
@@ -93,10 +85,9 @@
 			"memory": "64GB",
 			"weight": "113g"
 		},
-		"img": ["img/products/iphone-se.jpg"]
+		"img": ["img/products/iphone-se1.jpg", "img/products/iphone-se2.jpg", "img/products/iphone-se3.jpg", "img/products/iphone-se4.jpg"]
 	},
 	{
-		"id": 8,
 		"name": "iPhone 6 64GB",
 		"price": "590",
 		"description": "Free next business day delivery on any in-stock iPhone ordered by 5 p.m.",
@@ -105,10 +96,9 @@
 			"memory": "64GB",
 			"weight": "129g"
 		},
-		"img": ["img/products/iphone6.jpg"]
+		"img": ["img/products/iphone6_1.jpg", "img/products/iphone6_2.jpg","img/products/iphone6_3.jpg","img/products/iphone6_4.jpg"]
 	},
 	{
-		"id": 9,
 		"name": "iPhone 6 Plus 64GB",
 		"price": "670",
 		"description": "Free next business day delivery on any in-stock iPhone ordered by 5 p.m.",
@@ -117,30 +107,28 @@
 			"memory": "64GB",
 			"weight": "172g"
 		},
-		"img": ["img/products/iphone6.jpg"]
+		"img": ["img/products/iphone6_1.jpg", "img/products/iphone6_2.jpg","img/products/iphone6_3.jpg","img/products/iphone6_4.jpg"]
 	},
 	{
-		"id": 10,
 		"name": "iPhone 6s 16GB",
 		"price": "780",
-		"description": "The moment you use iPhone 6s, you know you’ve never felt anything like it. With a single press, 3D Touch lets you do more than ever before. Live Photos bring your memories to life in a powerfully vivid way. And that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.",
+		"description": "The moment you use iPhone 6s, you know you’ve never felt anything like it. With a single press, 3D Touch lets you do more than ever before. Live Photos bring your memories to life in a powerfully vid that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.",
 		"details": {
 			"display": "5.44\"",
 			"memory": "16GB",
 			"weight": "143g"
 		},
-		"img": ["img/products/iphone6s.jpg"]
+		"img": ["img/products/iphone6_1.jpg", "img/products/iphone6_2.jpg","img/products/iphone6_3.jpg","img/products/iphone6_4.jpg"]
 	},
 	{
-		"id": 11,
 		"name": "iPhone 6s 64GB",
 		"price": "899",
-		"description": "The moment you use iPhone 6s, you know you’ve never felt anything like it. With a single press, 3D Touch lets you do more than ever before. Live Photos bring your memories to life in a powerfully vivid way. And that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.",
+		"description": "The moment you use iPhone 6s, you know you’ve never felt anything like it. With a single press, 3D Touch lets you do more than ever before. Live Photos bring your memories to life in a powerfully vid that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.",
 		"details": {
 			"display": "5.44\"",
 			"memory": "64GB",
 			"weight": "143g"
 		},
-		"img": ["img/products/iphone6s.jpg"]
+		"img": ["img/products/iphone6_1.jpg", "img/products/iphone6_2.jpg","img/products/iphone6_3.jpg","img/products/iphone6_4.jpg"]
 	}
 ]
