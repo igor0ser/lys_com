@@ -3,8 +3,9 @@
 		Our products:
 	</h3>
 	<ul class="shop-list">
-		<li ng-repeat="product in $ctrl.products">
+		<li ng-repeat="product in $ctrl.products | limitTo : $ctrl.limit">
 			<product product-obj="product"></product>
 		</li>
 	</ul>
+	<button class="shop-show-more" ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <= $ctrl.products.length">Show more</button>
 </div>

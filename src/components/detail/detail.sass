@@ -1,7 +1,45 @@
 ﻿.detail
 	border: 2px solid $brdr
 	padding: 10px
-	.product-details
+	&-carousel
+		width: 40%
+		float: left
+		&-img
+			float: left
+			width: 30%
+			margin-top: 10px
+			margin-right: 3%
+			cursor: pointer
+			border: 1px solid $brdr
+			&:hover
+				border-color: $txt2
+			&:last-child
+				margin-right: 0
+	&-data
+		width: 58%
+		float: right
+		height: 100%
+		background: blue
+	&-name
+		float: left
+		margin-bottom: 5px
+	&-price
+		float: right
+	&-description
 		margin: 5px 0 20px
 		p
 			margin-bottom: 5px
+	&-buy
+		&-select
+			background: $bg2
+			color: $txt2
+			width: 40%
+			float: left
+			padding: 10px 6px
+			text-align: center
+			font-weight: bold
+		&-btn
+			width: 58%
+			float: right
+			padding: 9px 0
+			font-weight: bold

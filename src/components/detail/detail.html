@@ -1,14 +1,20 @@
 ﻿<div class="detail clearfix">
-	<div class="clearfix">
-		<figure class="product-figure">
-			<img ng-src="{{ $ctrl.productObj.img[0] }}" alt="" class="product-img">
-		</figure>
-		<div class="product-data">
+		<div class="detail-carousel">
+			<img ng-src="{{ $ctrl.productObj.img[ $ctrl.imgIndex ] }}" >
+			<img 
+				class="detail-carousel-img"
+				ng-repeat = "img in $ctrl.productObj.img"
+				ng-src = "{{ img }}" 
+				ng-if = "$index !== $ctrl.imgIndex"
+				ng-click = "$ctrl.imgIndex = $index"
+				>
+		</div>
+		<div class="detail-data">
 			<div class="clearfix">
-				<h3 class="product-name">{{ $ctrl.productObj.name }}</h3>
-				<h3 class="product-price">{{ $ctrl.productObj.price | currency }}</h3>
+				<h3 class="detail-name">{{ $ctrl.productObj.name }}</h3>
+				<h3 class="detail-price">{{ $ctrl.productObj.price | currency }}</h3>
 			</div>
-			<div class="product-details">
+			<div class="detail-description">
 				<p>
 					{{ $ctrl.productObj.description }}
 				</p>
@@ -22,16 +28,15 @@
 					<b>Weight: </b>{{ $ctrl.productObj.details.weight }}
 				</p>
 			</div>
-			<div class="product-buy clearfix">
-				<select class="product-buy-select clearfix">
+			<div class="detail-buy clearfix">
+				<select class="detail-buy-select clearfix">
 					<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
 						{{ $index+1 }}
 					</option>
 				</select>
-				<button class="product-buy-btn">
+				<button class="detail-buy-btn">
 					Buy
 				</button>
 			</div>
 		</div>
-	</div>
 </div>

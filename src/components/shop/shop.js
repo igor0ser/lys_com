@@ -6,4 +6,6 @@
 app.controller('shopController', function (model){
 	var $ctrl = this;
 	$ctrl.products = model.products;
+	$ctrl.limit = 9;
+	$ctrl.showMore = () => $ctrl.limit += 9;
 });
