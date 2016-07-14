@@ -1,5 +1,17 @@
-﻿@mixin spr($sprite)
+﻿=spr($sprite)
 	@include sprite-position($sprite)
 	@include sprite-width($sprite)
 	@include sprite-height($sprite)
 	background-image: url(img/sprite.png)
+
+=spr-size($sprite)
+	@include sprite-width($sprite)
+	@include sprite-height($sprite)
+
+=spr-img($sprite)
+	@include sprite-position($sprite)
+	background-image: url(img/sprite.png)
+
+=remove-outline
+	&:hover, &:focus, &:active
+		outline: none

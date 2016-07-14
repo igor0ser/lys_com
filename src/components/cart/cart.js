@@ -1,5 +1,5 @@
-﻿app.component('comp2', {
-	templateUrl: '../../components/comp2/comp2.html',
+﻿app.component('cart', {
+	templateUrl: '../../components/cart/cart.html',
 	controller: comp2Controloller
 });
 

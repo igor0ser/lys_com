@@ -13,9 +13,9 @@
 			url: '/detail/:productId',
 			template: '<detail></detail>'
 		})
-		.state('comp2', {
-			url: '/comp2',
-			template: '<comp2></comp2>'
+		.state('cart', {
+			url: '/cart',
+			template: '<cart></cart>'
 		});
 
 	$urlRouterProvider.otherwise('/home');

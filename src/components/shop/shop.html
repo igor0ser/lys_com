@@ -1,27 +1,34 @@
 ﻿<div class="shop">
 	<div class="clearfix">
-		<h3 class="shop-header">
+		<h2 class="shop-header">
 			Our products:
-		</h3>
+		</h2>
 		<button class="shop-show-filter" ng-click="$ctrl.showFilter = !$ctrl.showFilter">
 			Filter
 		</button>
 	</div>
 
-	<div class="shop-filter" ng-if="$ctrl.showFilter">
-		<input class="shop-filter-text" type="text" ng-model="productName" placeholder="Search item...">
+	<div class="shop-filter clearfix" ng-if="$ctrl.showFilter">
+	<div class="shop-filter-left">
+		<input class="shop-filter-text" type="text" ng-model="$ctrl.productName" placeholder="Search item...">
 		<label class="shop-filter-label" ng-repeat="category in $ctrl.categories">
-			<input type="checkbox" class="shop-filter-checkbox">
+			<input type="checkbox" class="shop-filter-checkbox" ng-model="category.checked">
 			<i></i>
 			<span>{{category.name}}</span>
-		</div>
+		</label>
+	</div>
+	<button class="shop-filter-sort" ng-click="$ctrl.sort('price')">
+		<i ng-class="$ctrl.sortIcon('price')"></i>
+		<span>Sort by price</span>
+	</button>
 	</div>
 
 	<ul class="shop-list">
 		<li ng-repeat="
 			product in $ctrl.products
-				| filter: { name: productName }
 				| category: $ctrl.categories 
+				| filter: {name: $ctrl.productName}
+				| orderBy: $ctrl.sortField : $ctrl.sortReverse
 				| limitTo : $ctrl.limit
 			">
 			<product product-obj="product"></product>
