@@ -6,6 +6,6 @@
 	}
 });
 
-app.controller('productController', function (){
-
+app.controller('productController', function (model){
+	var $ctrl = this;
 });

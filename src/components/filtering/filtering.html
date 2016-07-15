@@ -1,0 +1,14 @@
+﻿<div class="shop-filter clearfix">
+	<div class="shop-filter-left">
+		<input class="shop-filter-text" type="text" ng-model="$ctrl.filteringParams.productName" placeholder="Search item...">
+		<label class="shop-filter-label" ng-repeat="category in $ctrl.filteringParams.categories">
+			<input type="checkbox" class="shop-filter-checkbox" ng-model="category.checked">
+			<i></i>
+			<span>{{category.name}}</span>
+		</label>
+	</div>
+	<button class="shop-filter-sort" ng-click="$ctrl.sort('price')">
+		<i ng-class="$ctrl.sortIcon('price')"></i>
+		<span>Sort by price</span>
+	</button>
+</div>

@@ -1,5 +1,5 @@
 ﻿<div class="cart">
-	<h2>Your order:</h2>
+	<h2 class="cart-heading">Your order:</h2>
 	<table class="cart-table">
 		<thead>
 			<tr>
@@ -10,11 +10,17 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
+			<tr ng-if="$ctrl.products.length === 0">
 				<td>----</td>
 				<td>----</td>
 				<td>----</td>
 				<td>----</td>
+			</tr>
+			<tr ng-repeat="product in $ctrl.products">
+				<td>{{ product.name }}</td>
+				<td>{{ product.price }}</td>
+				<td>{{ product.quantity }}</td>
+				<td>{{ +product.price * +product.quantity }}</td>
 			</tr>
 		</tbody>
 	</table>

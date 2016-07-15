@@ -11,61 +11,6 @@
 	&-show-filter
 		float: right
 		margin: 0
-	&-filter
-		background: $bg2
-		color: $txt2
-		padding: 20px
-		margin-bottom: 20px
-		&-left
-			float: left
-		input
-			&:focus, &:hover
-				outline: none
-		&-text
-			background: $bg2
-			border: 2px solid $txt2
-			padding: 5px 10px
-			color: $txt2
-			margin-right: 10px
-			&::-moz-placeholder 
-				color: $txt2
-			&::-webkit-input-placeholder
-				color: $txt2
-				opacity: .7
-			&:-ms-input-placeholder
-				color: $txt2
-		&-label
-			line-height: 20px
-			cursor: pointer
-			margin-right: 10px
-			i
-				display: inline-block
-				vertical-align: middle
-				margin-right: 2px
-				+spr($sprite_checkbox1)
-			span
-				display: inline-block
-				vertical-align: middle
-		&-checkbox
-			display: none
-			&:checked+i
-				+spr-img($sprite_checkbox2)
-		&-sort
-			float: right
-			padding: 3px 20px 3px 2px
-			line-height: 20px
-			+remove-outline
-			i
-				+spr-size($sprite_up)
-				vertical-align: middle
-				display: inline-block
-				margin-right: 2px
-				&.sort-up
-					+spr-img($sprite_up)
-				&.sort-down
-					+spr-img($sprite_down)
-			span
-				vertical-align: middle
 	&-list
 		li
 			margin-right: 10px

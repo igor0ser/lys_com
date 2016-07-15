@@ -1,4 +1,4 @@
-﻿app.run(function($http, model){
+﻿app.run(function($http, model, filteringParams){
 	$http
 		.get('products.json')
 		.success( products => {
@@ -9,7 +9,7 @@
 				if (categoriesNames.indexOf(product.category) === -1 )
 					categoriesNames.push(product.category);
 			});
-			categoriesNames.forEach( name => model.categories.push({name: name, checked: false}));
+			categoriesNames.forEach( name => filteringParams.categories.push({name: name, checked: false}));
 			model.products = products;
 		});
 });

@@ -1,0 +1,3 @@
+﻿app.value('cartData', {
+	products: []
+});

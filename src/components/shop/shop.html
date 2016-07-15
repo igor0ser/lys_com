@@ -8,27 +8,14 @@
 		</button>
 	</div>
 
-	<div class="shop-filter clearfix" ng-if="$ctrl.showFilter">
-	<div class="shop-filter-left">
-		<input class="shop-filter-text" type="text" ng-model="$ctrl.productName" placeholder="Search item...">
-		<label class="shop-filter-label" ng-repeat="category in $ctrl.categories">
-			<input type="checkbox" class="shop-filter-checkbox" ng-model="category.checked">
-			<i></i>
-			<span>{{category.name}}</span>
-		</label>
-	</div>
-	<button class="shop-filter-sort" ng-click="$ctrl.sort('price')">
-		<i ng-class="$ctrl.sortIcon('price')"></i>
-		<span>Sort by price</span>
-	</button>
-	</div>
+	<filtering  ng-if="$ctrl.showFilter"></filtering>
 
 	<ul class="shop-list">
 		<li ng-repeat="
 			product in $ctrl.products
-				| category: $ctrl.categories 
-				| filter: {name: $ctrl.productName}
-				| orderBy: $ctrl.sortField : $ctrl.sortReverse
+				| category: $ctrl.filteringParams.categories 
+				| filter: {name: $ctrl.filteringParams.productName}
+				| orderBy: $ctrl.filteringParams.sortField : $ctrl.filteringParams.sortReverse
 				| limitTo : $ctrl.limit
 			">
 			<product product-obj="product"></product>

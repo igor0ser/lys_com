@@ -12,14 +12,5 @@
 			<p class="product-description">{{ $ctrl.productObj.description }}</p>
 		</div>
 	</a>
-	<div class="product-buy clearfix">
-		<select class="product-buy-select clearfix">
-			<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
-				{{ $index+1 }}
-			</option>
-		</select>
-		<button class="product-buy-btn">
-			Buy
-		</button>
-	</div>
+	<buy product-obj="$ctrl.productObj"></buy>
 </div>

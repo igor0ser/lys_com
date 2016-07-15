@@ -1,0 +1,3 @@
+﻿app.value('model', {
+	products: []
+});

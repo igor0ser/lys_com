@@ -1,0 +1,10 @@
+﻿<div class="product-buy clearfix">
+	<select class="product-buy-select clearfix" ng-model="$ctrl.quantity">
+		<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
+			{{ $index+1 }}
+		</option>
+	</select>
+	<button class="product-buy-btn" ng-click="$ctrl.addToCart()">
+		Add to Cart
+	</button>
+</div>

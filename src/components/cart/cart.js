@@ -1,9 +1,10 @@
 ﻿app.component('cart', {
 	templateUrl: '../../components/cart/cart.html',
-	controller: comp2Controloller
+	controller: cartControloller
 });
 
-function comp2Controloller(model){
-	console.log(123);
-	console.log(model);
+function cartControloller(cartData){
+	var $ctrl = this;
+	$ctrl.products = cartData.products;
+	console.log($ctrl.products);
 }
