@@ -7,7 +7,7 @@ app.controller('shopController', function (model, filteringParams){
 	var $ctrl = this;
 	$ctrl.products = model.products;
 	$ctrl.filteringParams = filteringParams;
-	$ctrl.showFilter = false;
+	$ctrl.showFilter = true;
 
 	$ctrl.limit = 9;
 	$ctrl.showMore = () => $ctrl.limit += 9;

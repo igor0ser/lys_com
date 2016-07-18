@@ -2,10 +2,37 @@
 	&-heading
 		margin-bottom: 20px
 	&-table
+		width: 100%
 		border-collapse: collapse
 		margin-bottom: 20px
+		text-align: center
 		td, th
-			border: 1px solid $txt1
+			border: 1px solid $brdr
 			padding: 10px
+			line-height: 16px
+		a:hover
+			opacity: .75
+		tfoot
+			font-weight: bold
+			td:first-child
+				padding: 20px
+				text-align: right
+	&-photo
+		height: 75px
+		width: auto
+		margin: auto
+	&-less,
+	&-more,
+	&-remove
+		+spr($sprite_plus)
+		display: inline-block
+		vertical-align: bottom
+		cursor: pointer
+		margin-left: 2px
+	&-less
+		+sprite-position($sprite_minus)
+		margin-left: 0
+	&-remove
+		transform: rotate(45deg)
 	&-make-order
 		padding: 5px 30px

@@ -1,4 +1,4 @@
-﻿app.run(function($http, model, filteringParams){
+﻿app.run(function($http, model, filteringParams, cartData){
 	$http
 		.get('products.json')
 		.success( products => {
@@ -12,4 +12,6 @@
 			categoriesNames.forEach( name => filteringParams.categories.push({name: name, checked: false}));
 			model.products = products;
 		});
+
+	cartData.load();
 });

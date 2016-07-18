@@ -4,7 +4,7 @@
 			{{ $index+1 }}
 		</option>
 	</select>
-	<button class="product-buy-btn" ng-click="$ctrl.addToCart()">
+	<button class="product-buy-btn" ng-click="$ctrl.addToCart($ctrl.productObj, +$ctrl.quantity)">
 		Add to Cart
 	</button>
 </div>

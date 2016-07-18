@@ -4,7 +4,7 @@
 			Our products:
 		</h2>
 		<button class="shop-show-filter" ng-click="$ctrl.showFilter = !$ctrl.showFilter">
-			Filter
+			{{ ($ctrl.showFilter) ? 'Hide filter' : 'Show filter' }}
 		</button>
 	</div>
 

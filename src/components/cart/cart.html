@@ -1,8 +1,11 @@
 ﻿<div class="cart">
 	<h2 class="cart-heading">Your order:</h2>
-	<table class="cart-table">
+	<h3 ng-if="$ctrl.cart.products.length === 0">You haven't any items in your order yet =(</h2>
+	<table class="cart-table" ng-if="$ctrl.cart.products.length > 0">
 		<thead>
 			<tr>
+				<th>#</th>
+				<th>Photo</th>
 				<th>Name</th>
 				<th>Price</th>
 				<th>Quantity</th>
@@ -10,19 +13,28 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-if="$ctrl.products.length === 0">
-				<td>----</td>
-				<td>----</td>
-				<td>----</td>
-				<td>----</td>
-			</tr>
-			<tr ng-repeat="product in $ctrl.products">
-				<td>{{ product.name }}</td>
-				<td>{{ product.price }}</td>
-				<td>{{ product.quantity }}</td>
-				<td>{{ +product.price * +product.quantity }}</td>
+			<tr ng-repeat="product in $ctrl.cart.products">
+				<td>{{ $index+1 }}</td>
+				<td><img ng-src="{{ product.img[0] }}" class="cart-photo"></td>
+				<td>
+					<a ui-sref="detail({productId: product.id})">{{ product.name }}</a>
+					<i class="cart-remove" ng-click="$ctrl.cart.remove(product.id)"></i>
+				</td>
+				<td>{{ product.price | currency }}</td>
+				<td>
+					<i class="cart-less" ng-click="$ctrl.cart.changeQuantity(product.id, false)"></i>
+					{{ product.quantity }}
+					<i class="cart-more" ng-click="$ctrl.cart.changeQuantity(product.id, true)"></i>
+				</td>
+				<td>{{ (+product.price * +product.quantity) | currency }}</td>
 			</tr>
 		</tbody>
+		<tfoot>
+			<td colspan="5">Summary:</td>
+			<td>{{ $ctrl.cart.summary | currency }}</td>
+		</tfoot>
 	</table>
-	<button class="cart-make-order">Make order</button>
+	<button class="cart-make-order" ng-if="$ctrl.cart.products.length > 0" ng-click="$ctrl.cart.clear()">
+		Make order
+	</button>
 </div>

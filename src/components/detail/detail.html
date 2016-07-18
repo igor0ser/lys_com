@@ -28,15 +28,5 @@
 					<b>Weight: </b>{{ $ctrl.productObj.details.weight }}
 				</p>
 			</div>
-			<div class="detail-buy clearfix">
-				<select class="detail-buy-select clearfix">
-					<option ng-repeat="n in [] | range:10" value="{{ $index+1 }}">
-						{{ $index+1 }}
-					</option>
-				</select>
-				<button class="detail-buy-btn">
-					Buy
-				</button>
-			</div>
-		</div>
+			<buy product-obj="$ctrl.productObj"></buy>
 </div>
