@@ -6,8 +6,11 @@
 	}
 });
 
-app.controller('buyController', function (cartData){
+app.controller('buyController', function (cartData, $modal){
 	var $ctrl = this;
-	$ctrl.quantity = "1";
-	$ctrl.addToCart = cartData.add;
+	$ctrl.quantity = '1';
+	$ctrl.addToCart = (product, quantity) => {
+		cartData.add(product, +quantity);
+		$modal.show('Product was <br> added to cart');
+	};
 });

@@ -10,17 +10,20 @@
 
 	<filtering  ng-if="$ctrl.showFilter"></filtering>
 
+	<h2>{{results.length}}</h2>
+
 	<ul class="shop-list">
 		<li ng-repeat="
-			product in $ctrl.products
-				| category: $ctrl.filteringParams.categories 
-				| filter: {name: $ctrl.filteringParams.productName}
-				| orderBy: $ctrl.filteringParams.sortField : $ctrl.filteringParams.sortReverse
-				| limitTo : $ctrl.limit
+			product in filteredResults = (
+				$ctrl.products
+					| category: $ctrl.filteringParams.categories 
+					| filter: {name: $ctrl.filteringParams.productName}
+					| orderBy: $ctrl.filteringParams.sortField : $ctrl.filteringParams.sortReverse 
+				) | limitTo : $ctrl.limit
 			">
 			<product product-obj="product"></product>
 		</li>
 	</ul>
 
-	<button class="shop-show-more" ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <= $ctrl.products.length">Show more</button>
+	<button class="shop-show-more" ng-click="$ctrl.showMore()" ng-if="$ctrl.limit <= filteredResults.length">Show more</button>
 </div>

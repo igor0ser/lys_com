@@ -34,7 +34,7 @@
 			<td>{{ $ctrl.cart.summary | currency }}</td>
 		</tfoot>
 	</table>
-	<button class="cart-make-order" ng-if="$ctrl.cart.products.length > 0" ng-click="$ctrl.cart.clear()">
+	<button class="cart-make-order" ng-if="$ctrl.cart.products.length > 0" ng-click="$ctrl.makeOrder()">
 		Make order
 	</button>
 </div>
