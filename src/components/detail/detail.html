@@ -1,13 +1,9 @@
 ﻿<div class="detail clearfix">
-		<div class="detail-carousel">
-			<img ng-src="{{ $ctrl.productObj.img[ $ctrl.imgIndex ] }}" >
-			<img 
-				class="detail-carousel-img"
-				ng-repeat = "img in $ctrl.productObj.img"
-				ng-src = "{{ img }}" 
-				ng-if = "$index !== $ctrl.imgIndex"
-				ng-click = "$ctrl.imgIndex = $index"
-				>
+		<div class="detail-images">
+			<a href="#"><img ng-src="{{ $ctrl.productObj.img[ $ctrl.imgIndex ] }}" ></a>
+			<a href="#" class="detail-images-item" ng-repeat = "img in $ctrl.productObj.img | startFrom: 1">
+				<img ng-src = "{{ img }}">
+			</a>
 		</div>
 		<div class="detail-data">
 			<div class="clearfix">
@@ -29,4 +25,5 @@
 				</p>
 			</div>
 			<buy product-obj="$ctrl.productObj"></buy>
+		</div>
 </div>

@@ -1,18 +1,21 @@
 ﻿.detail
 	border: 2px solid $brdr
 	padding: 10px
-	&-carousel
+	position: relative
+	&-images
 		width: 40%
 		float: left
-		&-img
-			float: left
-			width: 30%
-			margin-top: 10px
-			margin-right: 3%
-			cursor: pointer
+		a
 			border: 1px solid $brdr
+			display: block
 			&:hover
 				border-color: $txt2
+		&-item
+			float: left
+			width: 32%
+			margin-top: 10px
+			margin-right: 2%
+			cursor: pointer
 			&:last-child
 				margin-right: 0
 	&-data
@@ -24,20 +27,13 @@
 	&-price
 		float: right
 	&-description
-		margin: 5px 0 20px
+		margin: 5px 0 60px
+		text-align: justify
 		p
 			margin-bottom: 5px
-	&-buy
-		&-select
-			background: $bg2
-			color: $txt2
-			width: 40%
-			float: left
-			padding: 10px 6px
-			text-align: center
-			font-weight: bold
-		&-btn
-			width: 58%
-			float: right
-			padding: 9px 0
-			font-weight: bold
+	.buy
+		position: absolute
+		width: calc(58% - 10px)
+		bottom: 10px
+		right: 10px
+
