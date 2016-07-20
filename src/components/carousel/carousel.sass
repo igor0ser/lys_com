@@ -10,18 +10,25 @@
 		+pos_abs_center
 		padding: 25px
 		background: $bg1
+	&-window:hover &-btn
+		display: block
 	&-img
 		width: auto
 	&-btn
 		+remove-outline
+		display: none
 		position: absolute
-		left: 0
+		right: 0
 		top: 0
 		height: 100%
-		width: 60px
+		width: 50px
 		background: $bg2
-		opacity: .75
+		opacity: .65
 		i
-			+spr($sprite_prev)
+			+spr($sprite_next)
 			+pos_abs_center
+		&.prev
+			left: 0
+			i
+				+sprite-position($sprite_prev)
 

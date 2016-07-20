@@ -13,6 +13,10 @@
 			url: '/detail/:productId',
 			template: '<detail></detail>'
 		})
+			.state('detail.carousel', {
+				url: '/carousel',
+				template: '<carousel></carousel>'
+			})
 		.state('cart', {
 			url: '/cart',
 			template: '<cart></cart>'
