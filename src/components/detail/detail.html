@@ -1,7 +1,7 @@
 ﻿<div class="detail clearfix">
 		<div class="detail-images">
 			<a ui-sref="detail.carousel({imgId:0})"><img ng-src="{{ $ctrl.productObj.img[ $ctrl.imgIndex ] }}" ></a>
-			<a href="#" class="detail-images-item" ng-repeat = "img in $ctrl.productObj.img | startFrom: 1">
+			<a ui-sref="detail.carousel({imgId:$index})" class="detail-images-item" ng-repeat = "img in $ctrl.productObj.img | startFrom: 1">
 				<img ng-src = "{{ img }}">
 			</a>
 		</div>

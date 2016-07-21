@@ -6,8 +6,6 @@
 app.controller('detailController', function ($stateParams, model){
 	var $ctrl = this;
 	var id = +$stateParams.productId;
-	$ctrl.productObj = model.products.filter( p => p.id === id)[0];
+	$ctrl.productObj = model.getProduct(id);
 	$ctrl.imgIndex = 0;
-
-
 });

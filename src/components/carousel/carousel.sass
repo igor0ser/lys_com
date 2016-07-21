@@ -8,27 +8,30 @@
 	animation:  fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
 	&-window
 		+pos_abs_center
-		padding: 25px
+		padding: 40px
 		background: $bg1
 	&-window:hover &-btn
-		display: block
+		opacity: .65
 	&-img
 		width: auto
 	&-btn
 		+remove-outline
-		display: none
 		position: absolute
 		right: 0
-		top: 0
-		height: 100%
-		width: 50px
+		top: 25%
+		height: 50%
+		width: 35px
 		background: $bg2
-		opacity: .65
+		opacity: 0
+		transition: opacity .6s
 		i
 			+spr($sprite_next)
 			+pos_abs_center
+			margin-left: 3px
 		&.prev
 			left: 0
 			i
 				+sprite-position($sprite_prev)
+				margin-left: 0
+				margin-right: 3px
 

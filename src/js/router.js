@@ -15,7 +15,8 @@
 		})
 			.state('detail.carousel', {
 				url: '/carousel',
-				template: '<carousel></carousel>'
+				template: '<carousel></carousel>',
+				params: { imgId: 0 }
 			})
 		.state('cart', {
 			url: '/cart',

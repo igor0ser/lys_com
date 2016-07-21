@@ -5,11 +5,18 @@
 
 app.controller('carouselController', function (model, $state, $stateParams){
 	var $ctrl = this;
-	$ctrl.hide = () => {
-		console.log('ooo');
+	$ctrl.id = $stateParams.imgId;
+	$ctrl.img = model.getProduct($ctrl.id).img;
 
+	$ctrl.hide = () => {
 		$state.go('detail');
 	};
-	console.dir($ctrl);
-	console.dir($stateParams);
+
+	$ctrl.go = ($event, next) => {
+		$event.stopPropagation();
+		var last = $ctrl.img.length - 1;
+		(next) ? $ctrl.id += 1 : $ctrl.id -= 1;
+		if ($ctrl.id < 0) $ctrl.id = last;
+		if ($ctrl.id > last) $ctrl.id = 0;
+	};
 });
