@@ -6,7 +6,7 @@
 app.controller('carouselController', function (model, $state, $stateParams){
 	var $ctrl = this;
 	$ctrl.id = $stateParams.imgId;
-	$ctrl.img = model.getProduct($ctrl.id).img;
+	$ctrl.img = model.getProduct(+$stateParams.productId).img;
 
 	$ctrl.hide = () => {
 		$state.go('detail');
