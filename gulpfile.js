@@ -29,16 +29,17 @@ const PATH = {
 	SRC: {
 		HTML: 'src/**/*.html',
 		STYLES: [
-			'src/css/sprite.sass', 
-			'src/css/variables.sass',
-			'src/css/mixins.sass',
-			'src/css/main.sass',
-			'src/css/reset.sass',
+			'src/sass/sprite.sass', 
+			'src/sass/variables.sass',
+			'src/sass/mixins.sass',
+			'src/sass/main.sass',
+			'src/sass/reset.sass',
 			'src/components/**/*.sass'
 			],
 		SCRIPTS_LIB: [
 			'src/bower_components/angular/angular.min.js',
-			'src/bower_components/angular-ui-router/release/angular-ui-router.min.js'
+			'src/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+			'src/bower_components/angular-animate/angular-animate.min.js'
 			],
 		SCRIPTS: [
 			'src/js/app.js',
@@ -50,7 +51,7 @@ const PATH = {
 		JSON: 'src/*.json',
 		ROOT: 'src/'
 	},
-	SPRITES_STYLE: 'src/css/',
+	SPRITES_STYLE: 'src/sass/',
 	BUILD: 'build/',
 	IMAGES: 'build/img/',
 	LOCALHOST: 'http://localhost:8000/index.html'
@@ -160,3 +161,11 @@ gulp.task('clean',  () =>
 		.src(PATH.BUILD, {read: false})
 		.pipe(clean())
 );
+
+/* copy build to another folder */
+gulp.task('copy', () => 
+		gulp
+			.src('build/**/*.*')
+			.pipe(gulp.dest('../lys_com_build/'))
+);
+
